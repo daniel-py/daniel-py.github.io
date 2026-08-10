@@ -278,8 +278,8 @@
       <!-- 06 · SchoolExl EdgeAI -->
       <article class="case reveal">
         <div class="case-media">
-          <div class="rail" tabindex="0" role="group" aria-label="SchoolExl EdgeAI desktop screenshots - scroll horizontally">
-            <img src="assets/img/edgeai-1.webp" alt="EdgeAI home dashboard with streaks, XP, and daily activity" width="1200" height="650" loading="lazy" decoding="async">
+          <div class="rail" tabindex="0" role="group" aria-label="EdgeExl desktop screenshots - scroll horizontally">
+            <img src="assets/img/edgeai-1.webp" alt="EdgeExl home dashboard with streaks, XP, and daily activity" width="1200" height="650" loading="lazy" decoding="async">
             <img src="assets/img/edgeai-2.webp" alt="Learning Center with syllabus progress across subjects" width="1200" height="650" loading="lazy" decoding="async">
             <img src="assets/img/edgeai-3.webp" alt="Gallery of AI coaches, each tuned for a subject or task" width="1200" height="650" loading="lazy" decoding="async">
             <img src="assets/img/edgeai-4.webp" alt="Doubt solver answering questions step by step, offline" width="1200" height="650" loading="lazy" decoding="async">
@@ -288,20 +288,20 @@
         </div>
         <div class="case-body">
           <p class="case-no" aria-hidden="true">06</p>
-          <h3>SchoolExl EdgeAI</h3>
+          <h3>EdgeExl</h3>
           <p class="case-role">Desktop App Developer at SumeruEdutech · 2025 - now</p>
           <p class="case-desc">
-            SchoolExl’s fully-offline Windows desktop edition - the learning
-            platform with its AI coaches, doubt solver, and viva examiner, all
-            running on a school workstation with no internet required. I build
-            the Flutter desktop app.
+            SchoolExl’s fully-offline Windows desktop edition - AI coaches, a
+            doubt solver, and a viva examiner running entirely on a school
+            workstation, no internet required. I build the Flutter desktop app
+            and the AI runtime under it.
           </p>
           <ul class="case-points">
-            <li>On-device LLM inference through Intel OpenVINO - streaming responses on CPU or GPU, via a plugin I built and open-sourced (below)</li>
+            <li>On-device LLM and VLM inference through Intel OpenVINO - streaming answers on CPU or GPU, with camera frames as visual context - over FFI bridges and a plugin I built and open-sourced (below)</li>
+            <li>A fully local voice loop: mic capture, ONNX Runtime STT with a sherpa-onnx CPU fallback lane, then piper TTS - spoken conversation with no cloud in the path</li>
             <li>Offline-first everything: Isar local database, salted-PIN offline sign-in, one-time content sync when a connection exists</li>
-            <li>Clean architecture on BLoC with functional error handling (fpdart)</li>
           </ul>
-          <p class="case-tags"><span>Flutter</span><span>Windows</span><span>OpenVINO</span><span>Isar</span><span>BLoC</span></p>
+          <p class="case-tags"><span>Flutter</span><span>Windows</span><span>OpenVINO</span><span>ONNX&nbsp;Runtime</span><span>FFI</span></p>
           <p class="case-links">
             <a href="https://schoolexl.com/products/edge-ai" target="_blank" rel="noopener">schoolexl.com/products/edge-ai ↗</a>
           </p>
@@ -316,7 +316,8 @@
             <h3>Cloutt</h3>
             <p>
               A creator platform nearing launch: live streaming with AR face
-              filters - DeepAR piped into Agora RTC through a custom bridge - a
+              filters, running on the DeepAR-to-Agora plugins I built and
+              open-sourced (below) - a
               virtual-gift economy with wallet top-ups and withdrawals, realtime
               chat and presence over Socket.IO, and a full in-app video editing
               pipeline. I build core features across its live-streaming and
@@ -413,7 +414,7 @@
       <div class="section-head">
         <p class="eyebrow">Open source</p>
         <h2>Plugins other builders can use.</h2>
-        <p class="section-sub">Six Flutter plugins on pub.dev, born from production work - on-device OpenVINO inference from the EdgeAI desktop app, and the AR live-streaming pipeline from Cloutt.</p>
+        <p class="section-sub">Six Flutter plugins on pub.dev, born from production work - on-device OpenVINO inference from EdgeExl, and the AR live-streaming pipeline from Cloutt.</p>
       </div>
       <ul class="archive-list">
         <li class="reveal">
@@ -503,7 +504,7 @@
           <span class="xp-when">Aug 2025 - now</span>
           <div>
             <h3><a href="https://schoolexl.com" target="_blank" rel="noopener">SumeruEdutech</a></h3>
-            <p>Mobile/Desktop Engineer and AI Engineer - the SchoolExl mobile app, its offline EdgeAI desktop platform, and training the Sumeru SLMs.</p>
+            <p>Mobile/Desktop Engineer and AI Engineer - the SchoolExl mobile app, EdgeExl (its fully-offline desktop edition), and training the Sumeru SLMs.</p>
           </div>
         </li>
         <li class="reveal">
