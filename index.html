@@ -98,7 +98,7 @@
           <div><dt>Shipped to production</dt><dd>4 + 1</dd></div>
           <div><dt>Downloads across stores</dt><dd>7k+</dd></div>
           <div><dt>Mobile dev experience</dt><dd>4 years, and counting</dd></div>
-          <div><dt>Open-source projects</dt><dd>5 - four plugins, one dataset</dd></div>
+          <div><dt>Open-source projects</dt><dd>7 - six plugins, one dataset</dd></div>
           <div><dt>Articles written</dt><dd>2</dd></div>
           <div><dt>Degree</dt><dd>B.Sc. CS, first-class - best in department</dd></div>
           <div><dt>Currently</dt><dd>SumeruEdutech</dd></div>
@@ -275,6 +275,39 @@
         </div>
       </article>
 
+      <!-- 06 · SchoolExl EdgeAI -->
+      <article class="case reveal">
+        <div class="case-media">
+          <div class="rail" tabindex="0" role="group" aria-label="SchoolExl EdgeAI desktop screenshots - scroll horizontally">
+            <img src="assets/img/edgeai-1.webp" alt="EdgeAI home dashboard with streaks, XP, and daily activity" width="1200" height="650" loading="lazy" decoding="async">
+            <img src="assets/img/edgeai-2.webp" alt="Learning Center with syllabus progress across subjects" width="1200" height="650" loading="lazy" decoding="async">
+            <img src="assets/img/edgeai-3.webp" alt="Gallery of AI coaches, each tuned for a subject or task" width="1200" height="650" loading="lazy" decoding="async">
+            <img src="assets/img/edgeai-4.webp" alt="Doubt solver answering questions step by step, offline" width="1200" height="650" loading="lazy" decoding="async">
+            <img src="assets/img/edgeai-5.webp" alt="VIVA examiner running an oral exam" width="1200" height="650" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="case-body">
+          <p class="case-no" aria-hidden="true">06</p>
+          <h3>SchoolExl EdgeAI</h3>
+          <p class="case-role">Desktop App Developer at SumeruEdutech · 2025 - now</p>
+          <p class="case-desc">
+            SchoolExl’s fully-offline Windows desktop edition - the learning
+            platform with its AI coaches, doubt solver, and viva examiner, all
+            running on a school workstation with no internet required. I build
+            the Flutter desktop app.
+          </p>
+          <ul class="case-points">
+            <li>On-device LLM inference through Intel OpenVINO - streaming responses on CPU or GPU, via a plugin I built and open-sourced (below)</li>
+            <li>Offline-first everything: Isar local database, salted-PIN offline sign-in, one-time content sync when a connection exists</li>
+            <li>Clean architecture on BLoC with functional error handling (fpdart)</li>
+          </ul>
+          <p class="case-tags"><span>Flutter</span><span>Windows</span><span>OpenVINO</span><span>Isar</span><span>BLoC</span></p>
+          <p class="case-links">
+            <a href="https://schoolexl.com/products/edge-ai" target="_blank" rel="noopener">schoolexl.com/products/edge-ai ↗</a>
+          </p>
+        </div>
+      </article>
+
       <!-- In the works · Eleven36 -->
       <div class="building">
         <p class="eyebrow reveal">In the works - at <a href="https://eleven36hq.com" target="_blank" rel="noopener">Eleven36</a>, since Dec 2025</p>
@@ -380,9 +413,21 @@
       <div class="section-head">
         <p class="eyebrow">Open source</p>
         <h2>Plugins other builders can use.</h2>
-        <p class="section-sub">Four Flutter plugins on pub.dev, born from the AR live-streaming work in Cloutt - camera to AR to RTC, packaged.</p>
+        <p class="section-sub">Six Flutter plugins on pub.dev, born from production work - on-device OpenVINO inference from the EdgeAI desktop app, and the AR live-streaming pipeline from Cloutt.</p>
       </div>
       <ul class="archive-list">
+        <li class="reveal">
+          <span class="arch-year">v0.1.0</span>
+          <span class="arch-name pkg-name">openvino_genai</span>
+          <span class="arch-desc">On-device LLM inference for Flutter via Intel OpenVINO GenAI - streaming chat completion on CPU or GPU, with hardened load and fallback behaviour.</span>
+          <span class="arch-tech"><a href="https://pub.dev/packages/openvino_genai" target="_blank" rel="noopener">pub.dev ↗</a></span>
+        </li>
+        <li class="reveal">
+          <span class="arch-year">v0.1.0</span>
+          <span class="arch-name pkg-name">openvino_genai_windows</span>
+          <span class="arch-desc">Its Windows x64 implementation - downloads the pinned, SHA-256-verified OpenVINO runtime, compiles the C bridge, and bundles the DLLs.</span>
+          <span class="arch-tech"><a href="https://pub.dev/packages/openvino_genai_windows" target="_blank" rel="noopener">pub.dev ↗</a></span>
+        </li>
         <li class="reveal">
           <span class="arch-year">v0.1.7</span>
           <span class="arch-name pkg-name">flutter_deepar</span>
