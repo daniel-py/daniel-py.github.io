@@ -297,7 +297,7 @@
             and the AI runtime under it.
           </p>
           <ul class="case-points">
-            <li>On-device LLM and VLM inference through Intel OpenVINO - streaming answers on CPU or GPU, with camera frames as visual context - over FFI bridges and a plugin I built and open-sourced (below)</li>
+            <li>On-device LLM and VLM inference through Intel OpenVINO - streaming answers on CPU or GPU, with camera frames as visual context - over FFI bridges and plugins I built and open-sourced (below)</li>
             <li>A fully local voice loop: mic capture, ONNX Runtime STT with a sherpa-onnx CPU fallback lane, then piper TTS - spoken conversation with no cloud in the path</li>
             <li>Offline-first everything: Isar local database, salted-PIN offline sign-in, one-time content sync when a connection exists</li>
           </ul>
@@ -418,15 +418,15 @@
       </div>
       <ul class="archive-list">
         <li class="reveal">
-          <span class="arch-year">v0.1.0</span>
+          <span class="arch-year">v0.2.0</span>
           <span class="arch-name pkg-name">openvino_genai</span>
-          <span class="arch-desc">On-device LLM inference for Flutter via Intel OpenVINO GenAI - streaming chat completion on CPU or GPU, with hardened load and fallback behaviour.</span>
+          <span class="arch-desc">On-device LLM and vision-language (VLM) inference for Flutter via Intel OpenVINO GenAI - streaming chat and image description on CPU or GPU, with hardened load and fallback behaviour.</span>
           <span class="arch-tech"><a href="https://pub.dev/packages/openvino_genai" target="_blank" rel="noopener">pub.dev ↗</a></span>
         </li>
         <li class="reveal">
-          <span class="arch-year">v0.1.0</span>
+          <span class="arch-year">v0.2.0</span>
           <span class="arch-name pkg-name">openvino_genai_windows</span>
-          <span class="arch-desc">Its Windows x64 implementation - downloads the pinned, SHA-256-verified OpenVINO runtime, compiles the C bridge, and bundles the DLLs.</span>
+          <span class="arch-desc">Its Windows x64 implementation - downloads the pinned, SHA-256-verified OpenVINO runtime, compiles the LLM and VLM C bridges, and bundles the DLLs.</span>
           <span class="arch-tech"><a href="https://pub.dev/packages/openvino_genai_windows" target="_blank" rel="noopener">pub.dev ↗</a></span>
         </li>
         <li class="reveal">
