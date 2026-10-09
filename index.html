@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Oluremi - Software Engineer | Mobile, Desktop &amp; AI</title>
-  <meta name="description" content="Daniel Oluremi is a software engineer building production mobile apps, desktop apps, and fine-tuned language models. First-class Computer Science graduate.">
-  <meta property="og:title" content="Daniel Oluremi - Software Engineer | Mobile, Desktop &amp; AI">
-  <meta property="og:description" content="5 + 1 production apps. Fine-tuned models with a published dataset. Products people rely on.">
+  <title>Daniel Oluremi - Full-Stack Mobile Engineer | Flutter, Backend &amp; AI</title>
+  <meta name="description" content="Daniel Oluremi is a full-stack mobile engineer: production Flutter apps with native Kotlin and Swift, backends in Go and Python, and fine-tuned language models. First-class Computer Science graduate.">
+  <meta property="og:title" content="Daniel Oluremi - Full-Stack Mobile Engineer | Flutter, Backend &amp; AI">
+  <meta property="og:description" content="5 + 1 production apps. Backends in Go and Python. Fine-tuned models with a published dataset.">
   <meta property="og:type" content="website">
   <!-- Official URL: daniel-py.github.io (LinkedIn blocklists pages.dev). If a custom domain is added later, update these URLs to it. -->
   <link rel="canonical" href="https://daniel-py.github.io/">
@@ -25,6 +25,7 @@
   <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/jbmono-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <style>.fullstack{padding-block:clamp(1.5rem,4vh,3rem) clamp(4rem,10vh,6.5rem)}.fullstack .ai-card{background:var(--bg-elev)}.fullstack .ai-grid{grid-template-columns:repeat(2,minmax(0,1fr))}@media (max-width:640px){.fullstack .ai-grid{grid-template-columns:1fr}}</style>
   <script>
     document.documentElement.classList.add('js');
     (function () {
@@ -39,7 +40,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Daniel Oluremi",
-    "jobTitle": "Software Engineer",
+    "jobTitle": "Full-Stack Mobile Engineer",
     "url": "https://daniel-py.github.io/",
     "email": "mailto:doluremi19@gmail.com",
     "alumniOf": "Federal University of Agriculture, Abeokuta",
@@ -58,6 +59,7 @@
     <a class="wordmark" href="#top" aria-label="DO - Daniel Oluremi, back to top">D<span class="wordmark-i">O</span>.</a>
     <nav class="site-nav" aria-label="Primary">
       <a href="#work">Apps</a>
+      <a href="#fullstack">Full stack</a>
       <a href="#ai">AI</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -77,7 +79,7 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <p class="eyebrow reveal"><span class="accent">Software Engineer</span> | Mobile · Desktop · AI</p>
+      <p class="eyebrow reveal"><span class="accent">Full-Stack Mobile Engineer</span> | Flutter · Backend · AI</p>
       <h1 class="hero-name reveal">Daniel<br><span class="hero-name-i">Oluremi</span></h1>
       <div class="hero-cols reveal">
         <p class="hero-lede">
@@ -99,7 +101,7 @@
           <div><dt>Downloads across stores</dt><dd>7k+</dd></div>
           <div><dt>Mobile dev experience</dt><dd>4 years, and counting</dd></div>
           <div><dt>Open-source projects</dt><dd>7 - six plugins, one dataset</dd></div>
-          <div><dt>Articles written</dt><dd>2</dd></div>
+          <div><dt>Backends built</dt><dd>Go · Python (Flask, Django)</dd></div>
           <div><dt>Degree</dt><dd>B.Sc. CS, first-class - best in department</dd></div>
           <div><dt>Currently</dt><dd>Open to new roles</dd></div>
         </dl>
@@ -361,6 +363,66 @@
       </div>
     </section>
 
+    <!-- ============ FULL STACK ============ -->
+    <section class="fullstack" id="fullstack">
+      <div class="section-head">
+        <p class="eyebrow">Full stack</p>
+        <h2>Both sides of the API.</h2>
+        <p class="section-sub">The Flutter app in people’s hands, and the server behind it. I design the API and the database, build the auth, payments and background jobs, and deploy it myself: in Go today, and in Python since 2020.</p>
+      </div>
+      <div class="ai-grid">
+        <article class="ai-card reveal">
+          <h3>Kanban Boards: a Jira-style product, end to end</h3>
+          <p class="art-meta">2025 · Go API + Flutter client</p>
+          <p>
+            A Go API with Gin and GORM on PostgreSQL (Neon), shipped to Fly.io
+            in a Docker container: JWT auth with 2FA, plan-based access, and
+            Paystack subscription billing with a background worker that renews
+            plans. The Flutter client is mine too.
+          </p>
+          <p class="case-tags"><span>Go</span><span>Gin</span><span>PostgreSQL</span><span>Fly.io</span><span>Paystack</span><span>Flutter</span></p>
+          <p class="case-links"><a href="https://github.com/daniel-py/jira_copycat" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </article>
+        <article class="ai-card reveal">
+          <h3>The client side of the contract</h3>
+          <p class="art-meta">2024 - 2026 · in the apps above</p>
+          <p>
+            In the apps I’ve worked on, I built the parts of the API contract
+            that are easy to get wrong: realtime chat and tracking over
+            Socket.IO and websockets, direct media uploads signed on the client
+            with AWS Signature V4, Paystack payments, and messaging encrypted
+            end to end with the Signal Protocol.
+          </p>
+          <p class="case-tags"><span>Socket.IO</span><span>WebSockets</span><span>AWS&nbsp;SigV4</span><span>Paystack</span><span>Signal&nbsp;Protocol</span></p>
+        </article>
+        <article class="ai-card reveal">
+          <h3>A WhatsApp assistant for managing investors</h3>
+          <p class="art-meta">2020 · Python</p>
+          <p>
+            A Flask app on Twilio’s WhatsApp webhooks, deployed on
+            PythonAnywhere: password-gated admin commands to add investors and
+            ask how much has been invested, monthly charts on request, and an
+            MOU for each new investor, generated as a PDF and sent to them on
+            WhatsApp.
+          </p>
+          <p class="case-tags"><span>Python</span><span>Flask</span><span>Twilio</span><span>openpyxl</span></p>
+          <p class="case-links"><a href="https://github.com/daniel-py/whatsapp_bot" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </article>
+        <article class="ai-card reveal">
+          <h3>A Django website with admin-managed content</h3>
+          <p class="art-meta">2020 · Python</p>
+          <p>
+            A multi-page Django 2.2 site: the Achievements page pulls posts
+            and their images from the database, content goes in through the
+            Django admin with image uploads, and the About and Contact pages
+            share one set of templates.
+          </p>
+          <p class="case-tags"><span>Python</span><span>Django</span><span>SQLite</span><span>Templates</span></p>
+          <p class="case-links"><a href="https://github.com/daniel-py/My-Web-Project" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </article>
+      </div>
+    </section>
+
     <!-- ============ AI ============ -->
     <section class="ai" id="ai">
       <div class="section-head">
@@ -565,9 +627,10 @@
           <p>
             I graduated top of my Computer Science class at the Federal University of
             Agriculture, Abeokuta - first-class honours, best graduating student in
-            the department. I’ve been writing programs since 2019 and building
-            mobile apps since 2022 - Flutter across mobile and desktop - and lately
-            machine learning: from DeepLearning.AI’s specialization into fine-tuning
+            the department. I’ve been writing programs since 2019 - my first
+            backends were Python, in Django and Flask - and building mobile apps
+            since 2022: Flutter across mobile and desktop, with APIs of my own in
+            Go. Lately, machine learning: from DeepLearning.AI’s specialization into fine-tuning
             real models on real GPUs.
           </p>
           <p>
